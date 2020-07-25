@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/searhBarColor"
+    tools:context=".LocationActivity">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?android:colorBackground"
+    android:layout_alignParentTop="true">
+<AutoCompleteTextView
+    android:id="@+id/searchLocation"
+    android:hint="@string/enter_your_address"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/radius_2"
+    android:layout_height="50dp"
+    android:layout_margin="20dp"
+    android:inputType="text"
+    android:maxLines="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@color/searhBarColor"
+        android:padding="4dp"/>
+
+        <com.lucasurbas.listitemview.ListItemView
+            android:id="@+id/list_item_view_current_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liv_title="@string/get_curr_location"
+            app:liv_icon="@drawable/marker"
+            app:liv_multiline="false"
+            app:liv_displayMode="icon"/>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/address_label"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="?android:colorBackground">
+        <com.lucasurbas.listitemview.ListItemView
+            android:id="@+id/list_item_view_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liv_title="-"
+            app:liv_subtitle="@string/home_address_label"
+            app:liv_icon="@drawable/home"
+            app:liv_menu="@menu/uncheck_menu"
+            app:liv_multiline="false"
+            app:liv_displayMode="icon"/>
+
+        <com.lucasurbas.listitemview.ListItemView
+            android:id="@+id/list_item_view_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liv_title="-"
+            app:liv_subtitle="@string/work_address_label"
+            app:liv_icon="@drawable/work"
+            app:liv_menu="@menu/uncheck_menu"
+            app:liv_multiline="false"
+            app:liv_displayMode="icon"/>
+
+        <com.lucasurbas.listitemview.ListItemView
+            android:id="@+id/list_item_view_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liv_title="-"
+            app:liv_subtitle="@string/other_address_label"
+            app:liv_icon="@drawable/other"
+            app:liv_menu="@menu/uncheck_menu"
+            app:liv_multiline="false"
+            app:liv_displayMode="icon"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/save_locale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:enabled="false"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+

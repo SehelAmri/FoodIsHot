@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="22dp"
+        android:background="@drawable/effects_greymode"
+        >
+
+    <TextView
+        android:id="@+id/rm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Montreal Smoked Meat and Cheddar Omelette"
+        android:textColor="@android:color/black"
+        android:paddingBottom="10dp"
+        android:layout_weight="0.8"/>
+
+        <TextView
+            android:id="@+id/rm_details"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Chicken,Spices,roast beef come get some easy access now free"
+            android:gravity="left"
+           />
+        <TextView
+            android:id="@+id/rm_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:textColor="@android:color/black"
+            android:text="100,000 TZS"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_weight="0.2"/>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/searchBarBorder"/>
+    </LinearLayout>
+</RelativeLayout>

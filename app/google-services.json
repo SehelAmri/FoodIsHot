@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1036122344006",
+    "firebase_url": "https://fooishot.firebaseio.com",
+    "project_id": "fooishot",
+    "storage_bucket": "fooishot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036122344006:android:afa1c399b069f78ec2d847",
+        "android_client_info": {
+          "package_name": "com.example.foodishot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036122344006-14fr5ceh103mkojrk6kdmnh0vogjnr6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodishot",
+            "certificate_hash": "5999e8c3b95d63ee7fa96069f1a3eba860ab3d38"
+          }
+        },
+        {
+          "client_id": "1036122344006-g5nrn2n4e2urbsoofukjojkv960j9lib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlD0WaHaALDAKreAwiw5sihqHFe2mbCXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036122344006-g5nrn2n4e2urbsoofukjojkv960j9lib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

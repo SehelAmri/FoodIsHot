@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F42900</color>
+    <color name="colorPrimary_selected">#F44622</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#F42900</color>
+    <color name="searhBarColor">#F4F3F3</color>
+    <color name="searchBarBorder">#e8e8e8</color>
+    <color name="background">#ffffff </color>
+</resources>

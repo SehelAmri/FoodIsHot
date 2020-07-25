@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="top"
+        android:layout_alignParentTop="true">
+<Button
+    android:id="@+id/mButton"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="@string/language"
+    android:textColor="@android:color/darker_gray"
+    android:background="@android:color/transparent"
+    android:drawableEnd="@drawable/dropdown"
+    />
+    </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:src="@drawable/fisicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <ImageView
+        android:src="@drawable/logored"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:hint="@string/hint"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="phone"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/signUpbtn"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/GO"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:layout_marginTop="20dp"
+            android:textAlignment="viewEnd"
+            android:text="@string/mDonthaveAccount"
+            />
+        <TextView
+            android:id="@+id/signUpLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:layout_marginTop="20dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorPrimary"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
